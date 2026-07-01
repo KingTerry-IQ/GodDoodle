@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://dx30a4up5dlny"]
+
+[ext_resource type="Script" uid="uid://ccl8nbkvfli0m" path="res://main.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dhvrabmh00opn" path="res://Assets/iq_logo.jpg" id="3_logo"]
+[ext_resource type="Theme" uid="uid://ttfn1lwmpbnk" path="res://Assets/iq_theme.tres" id="4_iqtheme"]
+
+[sub_resource type="StyleBoxFlat" id="PanelStyle"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0, 0.8, 0, 1)
+
+[node name="Main" type="Control" unique_id=1312293436]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_iqtheme")
+script = ExtResource("1_script")
+
+[node name="BG" type="ColorRect" parent="." unique_id=2067173395]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="IQLogo" type="TextureRect" parent="." unique_id=969178747]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 2.0
+offset_right = 20.0
+offset_bottom = 42.0
+grow_horizontal = 2
+texture = ExtResource("3_logo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PoweredLabel" type="Label" parent="." unique_id=1740496311]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 44.0
+offset_right = -20.0
+offset_bottom = 56.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Powered by $IQ"
+horizontal_alignment = 1
+
+[node name="TitleLabel" type="Label" parent="." unique_id=332238820]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 58.0
+offset_right = -20.0
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "GOD DOODLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="." unique_id=838520819]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 90.0
+offset_right = -20.0
+offset_bottom = 106.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "TempleOS Holy Spirit Doodle • 640×480 16-color EGA • Live universe time"
+horizontal_alignment = 1
+
+[node name="ClockBar" type="ColorRect" parent="." unique_id=1261776812]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 108.0
+offset_right = -20.0
+offset_bottom = 132.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TimestampLabel" type="Label" parent="." unique_id=198524631]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 110.0
+offset_right = -20.0
+offset_bottom = 130.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "1751392847123"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=682328173]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 134.0
+offset_right = -20.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DoodlePanel" type="Panel" parent="CenterContainer" unique_id=249856867]
+custom_minimum_size = Vector2(740, 420)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("PanelStyle")
+
+[node name="DoodleRect" type="TextureRect" parent="CenterContainer/DoodlePanel" unique_id=1121380232]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StatusLabel" type="Label" parent="." unique_id=909959106]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -20.0
+offset_right = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "Press SPACE to start a new God Doodle. (SHIFT+ESC/Ctrl+S when done)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=2063193775]
+title = "Export God Doodle PNG"
+size = Vector2i(600, 400)
+ok_button_text = "Save"
+dialog_hide_on_ok = true
+access = 2
+filters = PackedStringArray("*.png ; PNG Image")
+
+[connection signal="gui_input" from="CenterContainer/DoodlePanel" to="." method="_on_doodle_gui_input"]

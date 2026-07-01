@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#222"/>
+  <circle cx="64" cy="64" r="48" fill="#0a0" stroke="#0f0" stroke-width="4"/>
+  <circle cx="48" cy="48" r="12" fill="#333"/>
+  <circle cx="80" cy="48" r="12" fill="#333"/>
+  <path d="M40 80 Q64 100 88 80" fill="none" stroke="#0f0" stroke-width="6"/>
+  <text x="64" y="120" font-family="monospace" font-size="16" fill="#0f0" text-anchor="middle">GOD</text>
+</svg>
