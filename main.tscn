@@ -174,5 +174,6 @@ ok_button_text = "Save"
 dialog_hide_on_ok = true
 access = 2
 filters = PackedStringArray("*.png ; PNG Image")
+use_native_dialog = true
 
 [connection signal="gui_input" from="CenterContainer/DoodlePanel" to="." method="_on_doodle_gui_input"]
